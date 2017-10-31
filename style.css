@@ -1,24 +1,284 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.2;
+}
+
+body {
+  background-color: beige;
+}
 
 div {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 300px;
   margin: 10px;
-  border: 1px solid black;
+  position: relative;
 }
 
 header {
-  height: 20vh;
   color: gray;
   background-color: black;
+  position: relative;
+  padding: 5px;
+}
+
+li {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  display: inline-block;
+  margin: 40px 0 10px 20px;
+  font-size: 1.2em;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+figcaption {
+  display: inline-block;
+}
+
+.wiiu {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.smashsymbol {
+  display: inline-block;
+  bottom: 10px;
+  height: 30px;
+  margin: 5px;
+}
+
+.username {
+  height: 15px;
+  margin: 5px;
+}
+
+h4 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin: 3px;
+}
+
+.right {
+  float: right;
+}
+
+.mylineup {
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 1.8em;
 }
 
 main {
+  margin: 0 auto;
+  width: 1280px;
   display: flex;
   flex-wrap: wrap;
-  background-color: tan;
+  background-color: beige;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 1.6em;
 }
 
 h2 {
   display: block;
   clear: both;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.tierright {
+  display: inline-block;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  opacity: 0;
+}
+
+.rankleft {
+  position: absolute;
+  bottom: 50px;
+  opacity: 0;
+}
+
+.numright {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2.2em;
+  opacity: 0;
+}
+
+.numleft {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2.2em;
+  color: blue;
+  opacity: 0;
+}
+
+.inner p, .appearance {
+  font-size: 1.1em;
+  color: gray;
+  opacity: 0;
+}
+
+.universe {
+  font-size: 1.3em !important;
+  color: black !important;
+  opacity: 0;
+}
+
+.name {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 10px auto;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center; 
+}
+
+.inner {
+  margin: .1px;
+  padding: 10px;
+  height: 60%;
+  position: absolute;
+  bottom: 0px;
+  background-color: RGBA(255, 255, 255, .0);
+}
+
+.card {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  top: 0;
+  transition: top ease 0.3s;
+}
+
+.logo {
+  height: 80px;
+}
+
+.one {
+  background-image: url('images/Captain_Falcon.png');
+  background-size: cover;
+  background-color: RGBA(199, 0, 57, .7);
+}
+
+.two {
+  background-image: url('images/Marth.png');
+  background-size: cover;
+  background-color: lightblue;
+}
+
+.three {
+  background-image: url('images/Link.png');
+  background-size: cover;
+  background-color: lightgreen;
+}
+
+.four {
+  background-image: url('images/Samus.png');
+  background-size: cover;
+  background-color: RGBA(248, 93, 4, .7);
+}
+
+.five {
+  background-image: url('images/Donkey_Kong.png');
+  background-size: cover;
+  background-color: tan;
+}
+
+.six {
+  background-image: url('images/Jigglypuff.png');
+  background-size: cover;
+  background-color: rgba(255, 182, 193, .5);
+}
+
+.seven {
+  background-image: url('images/Luigi.png');
+  background-size: cover;
+  background-color: RGBA(0, 181, 145, 1);
+}
+
+.eight {
+  background-image: url('images/Ganondorf.png');
+  background-size: cover;
+  background-color: RGBA(88, 7, 148, .6);
+}
+
+div:hover .inner {
+  background-color: RGBA(255, 255, 255, 0.9);
+}
+/*MAKE TEXT APPEAR*/
+div:hover .universe {opacity: 1;}
+div:hover .inner p {opacity: 1;}
+div:hover .appearance {opacity: 1;}
+div:hover .numleft {opacity: 1;}
+div:hover .numright {opacity: 1;}
+div:hover .rankleft {opacity: 1;}
+div:hover .tierright {opacity: 1;}
+
+.card:hover {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+  top: -3px;
+}
+
+@media screen and (max-width: 1279px) {
+  main {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  main {
+    width: 640px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  main {
+    width: 320px;
+  }
+  li {
+    margin: 5px;
+  }
+
+  .username {
+    font-size: 1.1em;
+  }
+
+  li {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    display: block;
+    margin: 5px 0 5px 10px;
+    font-size: 1.2em;
+  }
+
+  figure {
+    display: flex;
+    align-items: center;
+  }
+
+  figcaption {
+    display: inline-block;
+  }
 }
