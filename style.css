@@ -59,7 +59,7 @@ figcaption {
 
 h4 {
   font-family: 'Saira Semi Condensed', sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   display: flex;
   align-items: center;
   margin: 3px;
@@ -262,12 +262,11 @@ div:hover .tierright {opacity: 1;}
     margin: 5px;
   }
 
-  .username {
-    font-size: 1.1em;
+  h4 {
+    font-size: 1.2em;
   }
 
   li {
-    font-family: 'Saira Semi Condensed', sans-serif;
     display: block;
     margin: 5px 0 5px 10px;
     font-size: 1.2em;
@@ -278,7 +277,4 @@ div:hover .tierright {opacity: 1;}
     align-items: center;
   }
 
-  figcaption {
-    display: inline-block;
-  }
 }
