@@ -1,5 +1,6 @@
 # bc-static-comp2
 
+![screenshot](/images/Super_Smash.png?raw=true "lineup of smash characters without hover state")
 A Turing project.  The challenge was to mirror the layout of the original design (seen below) while having creative liscence with images, logos, and content.  While the original design has a serious, workplace demeanor, I made mine a lighthearted design around a party-game called "super smash brothers wii u".  This presented several challenges.  First, there was a significant amount of text - which would detract from the image, and second the text would not remain consistent with the playful spirit I was going for.  My solution was to introduce a hover-state that would not only satisfy the comp requirements, but also preserve the quality of image and mood of the other cards that were not in hover state.
 
 Technical details:
